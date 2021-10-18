@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+article {
+
+    color: white;
+
+}
+
+a:active:visited {
+    color: rgb(88, 20, 88);
+}
+
+a:link {
+    color: rgb(10, 10, 141);
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(59, 57, 80);
+    list-style-type: none;
+    float: left;
+}
+
+.navbarul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbarli {
+    float: left;
+}
+
+#hautpage {
+
+    font-size: 30px;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+a:hover {
+    color: antiquewhite;
+    background-color: rgb(107, 107, 107);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+input:read-only {
+    background: cyan;
+}
