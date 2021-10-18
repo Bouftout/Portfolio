@@ -7,7 +7,7 @@ var compression = require('compression'),
   helmet = require('helmet'),
   port = process.env.PORT || 3000;
 
-app.listen(5000)
+app.listen(port)
 
 /*une fois que vous avez l'intention de traiter des fichiers texte d'une taille supérieure à environ 10 Mo
 ,je vous conseille de laisser tomber readFile et de commencer à utiliser les flux(fs.readfilestream).
@@ -77,20 +77,6 @@ var cache = (duration) => {
     }
   }
 }
-
-// set up plain http server
-
-var http = express();
-// set up a route to redirect http to https
-http.get('*', function (req, res) {
-  res.redirect('https://' + req.headers.host + req.url);
-})
-
-// have it listen on 8080
-http.listen(port);
-
-
-
 
 
 app.get('/', cache(20), function (req, res) {
