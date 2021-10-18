@@ -21,7 +21,8 @@
     "colors": "^1.4.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "moment": "^2.29.1"
   },
   "devDependencies": {},
   "keywords": []
