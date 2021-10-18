@@ -5,7 +5,6 @@ var compression = require('compression'),
   moment = require('moment'),
   fs = require('fs'),
   helmet = require('helmet'),
-  mcache = require('memory-cache'),
   port = process.env.PORT || 3000;
 
 app.listen(5000)

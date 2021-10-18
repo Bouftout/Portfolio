@@ -1,0 +1,27 @@
+{
+  "name": "tonipastre",
+  "version": "1.0.0",
+  "description": "site web en cours(serv node.js)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bouftout/sitewebcours.git"
+  },
+  "author": "Toni Pastre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bouftout/sitewebcours/issues"
+  },
+  "homepage": "https://github.com/Bouftout/sitewebcours#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
