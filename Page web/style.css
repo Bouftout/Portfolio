@@ -67,3 +67,53 @@ img {
 input:read-only {
     background: cyan;
 }
+
+.navbarul:hover {
+    animation-duration: 5s;
+    animation-name: disco;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes disco {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+.navbarul {
+    animation-name: basnav;
+    animation-duration: 10s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes basnav {
+    from {top: 0px;}
+    to {top: 200px; background-color: grey;}
+  }
+
+  #btssio {
+    animation-duration: 2s;
+    animation-name: glissement;
+  }
+  @keyframes glissement {
+    from {
+      margin-left: 100%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  
+  @keyframes myfirst {
+    0%   {background-color:red; left:0px; right:0px;}
+    25%  {background-color:yellow; left:200px; right:0px;}
+    50%  {background-color:blue; left:200px; right:200px;}
+    75%  {background-color:green; left:0px; right:200px;}
+    100% {background-color:red; left:0px; right:0px;}
+  }

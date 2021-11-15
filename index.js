@@ -54,45 +54,12 @@ console.log('---------------------------------'.verbose)
 console.log(('Langue:' + moment.locale('fr') + 'ançaise\n').silly + //Langue française
   '---------------------------------'.verbose +
   '\nDémarré le :\n'.info +
-  moment().format('llll').prompt      /*    mar. 18 sept. 2018 20:59 */)
+  moment().format('llll').prompt + `Port: ${port}`.info )
 
 
 
 
 
-var cache = (duration) => {
-  return (req, res, next) => {
-    let key = '__express__' + req.originalUrl || req.url
-    let cachedBody = mcache.get(key)
-    if (cachedBody) {
-      res.send(cachedBody)
-      return
-    } else {
-      res.sendResponse = res.send
-      res.send = (body) => {
-        mcache.put(key, head, body, duration * 1000);
-        res.sendResponse(head, body)
-      }
-      next()
-    }
-  }
-}
-
-
-app.get('/', cache(20), function (req, res) {
-  fs.exists("./Page web/index.html", function (exists) {
-    if (exists) {
-      fs.readFile('./Page web/index.html', 'utf-8', function (error, content) {
-        res.writeHead(200, { "Content-Type": "text/html" });
-        res.end(content);
-      }) //fin fs read file
-    } else {
-
-      res.redirect('/notexist')
-
-    }; /*else exist */
-  });   //fs ecist
-});
 
 
 
@@ -138,22 +105,6 @@ app.get('/notexist', function (req, res) {
 
 
 
-app.get('/ampoule/feed.png', function (req, res) { //chargement images
-
-  if (req.url.indexOf('./Page web/ampoule/feed.png') < 0) {
-    res.writeHead(200, { "Content-Type": "image/gif" });
-    res.write(fs.readFileSync('./Page web/ampoule/feed.png'));
-    res.end();
-  }
-})
-
-app.get('/api/fruits', function (req, res) {
-  var data = {
-    fruits: ['banana', 'apple'],
-    how_many: 2
-  };
-  res.json(data);
-});
 
 
 ms = require('mediaserver'); //ms require
@@ -177,6 +128,5 @@ app.use(morgan('combined')) // Active le middleware de logging
       res.end(content);
     });
   });
-
 
 
