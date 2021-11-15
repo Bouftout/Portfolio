@@ -62,6 +62,30 @@ console.log(('Langue:' + moment.locale('fr') + 'ançaise\n').silly + //Langue fr
 
 
 
+app.get('/cv', function (req, res) {
+  var file = 'https://www.linkedin.com/ambry/?x-li-ambry-ep=AQHBSMdn6Or4dAAAAXz-tpv1NfG7hlaaoZv96wY7wwZxCTZHoouujhG1Nr8zAvwIewRkMH0dKbWa_8UldYFGrBCdWrv81dCfCaUOJqzKK4mPaWY1iTOGsBZnIvEANiJ7I2-b9glnRf_vhisT6OCaCEb2aoH__MDGPwHDSiWpYu4bh428dwqYOM8S0zutassEwv0oX0OAtgnbJMu8A5uOM5YqeoJA_8ACMTrTMsv7mrPbSEVOWBEwyfTJAQoX2s6g5s7l9_2Qh2B0LLbRk5eB9QVWUR0j187O6QZ8PmkRg2LuKk98_qZHJ-kaIgUxYQsAdY6Ujkzyh17qojjNVW6PcrXLLdqHEK-9t0j9KwKsO8sRiyWPlFq3aQSbLLhc0zCBN0vD986ligmf2vyX2PTySI5RHbCjjWcO86LxfsIG8kTkHoeuaWGrNux12kZ2ccrsnzmVOucWKqhmr-sNIPeJ5u2eceZtmD4iib56mVaErkA8ofdXRAjIHANUCN_9Lc5895wiB0vPP662077MVD8jJQ&x-ambry-um-filename=Profile.pdf'
+  res.download(file, function (err) {
+      if (err) {
+          console.log("Error");
+          console.log(err);
+      } else {
+          console.log("Success");
+          fs.exists("./cv.pdf", function (exists) {
+            if (exists) {
+              fs.readFile('./cv.pdf', 'utf-8', function (error, content) {
+                res.writeHead(200, { "Content-Type": "application/pdf" });
+                res.end(content);
+              }) //fin fs read file
+            } else {
+        
+              res.redirect('/notexist')
+        
+            }; /*else exist */
+          });   //fs ecist
+      }
+  });
+});
+
 
 function makeid(length) {
   var result = '';
