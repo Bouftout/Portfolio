@@ -1,9 +1,41 @@
+h5 {
+color: red;
+}
 
+html {
+  height: 100%;
+}
 
+body {
+  height: 100%;
+  position: relative;
+}
 
+#wrap {
+  min-height: 100%;
+  position: relative;
+}
 
+#header {
+  position: relative;
+}
 
-  /* Style the tab */
+#main {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+#footer {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -38,6 +70,7 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
 /* Add a black background color to the top navigation */
 .topnav {
   text-align: center;

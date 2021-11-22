@@ -1,0 +1,102 @@
+ <div class="tab">
+                            <button class="tablinks" onclick="openCity(event,
+                                'Btssio')">Btssio</button>
+                            <button class="tablinks" onclick="openCity(event,
+                                'formation')">Formation</button>
+                            <button class="tablinks" onclick="openCity(event,
+                                'Tokyo')">Tokyo</button>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div id="Btssio" class="tabcontent">
+                            <h3>Présentation du bts SIO</h3>
+                            <p id="btssio">Le BTS Services informatique aux
+                                Organisations
+                                est un
+                                diplôme reconnu
+                                par l’état de niveau Bac+2. Il remplace depuis
+                                septembre
+                                2011
+                                l’ancien BTS informatique de Gestion (BTS IG).
+                                En effet,
+                                cette
+                                nouvelle formule répond aux attentes de la
+                                profession en
+                                matière de
+                                qualification. Le programme a évolué en fonction
+                                de la
+                                place
+                                et du
+                                rôle des TIC (Technologies d’Information
+                                Communication)
+                                et
+                                propose
+                                deux spécialités bien distinctes : le BTS SIO
+                                SISR et le
+                                BTS
+                                SIO
+                                SLAM.
+
+                                Il associe aux enseignements théoriques et
+                                professionnels
+                                (en
+                                contrôle continu et final) deux stages en
+                                entreprise (10
+                                à
+                                11
+                                semaines réparties sur les deux années
+                                d’études).
+
+                                En plus des matières en lien avec l’ingénierie
+                                informatique,
+                                la
+                                formation propose également des enseignements de
+                                culture
+                                générale,
+                                d’anglais (avec la possibilité de continuer une
+                                LV2), de
+                                mathématiques appliquées à l’informatique, ainsi
+                                que sur
+                                les
+                                outils
+                                d’analyse économique, managériale et juridique
+                                des
+                                services
+                                informatiques.
+
+                                De plus, au cours de cette formation, il est
+                                possible de
+                                bénéficier
+                                d’un enseignement approfondi en mathématiques et
+                                de
+                                travailler en
+                                autonomie en laboratoire informatique.</p>
+                        </div>
+
+                        <div id="formation" class="tabcontent">
+                            <h3>Mon parcours professionnels</h3>
+                            <p>J'ai eu comme parcours :</p>
+                            <br>
+                            <p><strong>2018-2021</strong> : Lycée professionnel
+                                Robert Schuman à Avignon pour obtenir un
+                                baccalauréat professionnel Système numèrique(SN)
+                                option Réseaux informatique et système
+                                communiquant
+                                (RISC) ; <a href="diplomebac.JPG">Lien du bac</a></p>
+                            <br>
+                            <p><strong>2018-2021</strong> : Collège Simonve Veil
+                                à Châteaurenard ; <a href="./diplomebrevet.pdf">Lien
+                                    du Brevet</a></p>
+                            <br>
+                            <p><strong>2018-2021</strong> : Lycée professionnel
+                                Robert Schuman à Avignon </p>
+                        </div>
+
+                        <div id="Tokyo" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                        <br><br>
+                        <br><br>
+                        <br><br>
+                        <br><br>

@@ -5,10 +5,9 @@
         <meta charset="utf-8">
         <title>Porfolios</title>
         <link rel="stylesheet" href="style.css" />
-        <!-- Compiled and minified CSS -->
+        <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,180 +15,70 @@
         <head>
 
             <body>
-                <script>
-                    
-        function openCity(evt, cityName) {
-          // Declare all variables
-          var i, tabcontent, tablinks;
-        
-          // Get all elements with class="tabcontent" and hide them
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-        
-          // Get all elements with class="tablinks" and remove the class "active"
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-        
-          // Show the current tab, and add an "active" class to the button that opened the tab
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        
-                </script>
+
+
                 <nav>
-                    <div class="nav-wrapper">
-                        <a class="active" id='hautpage'
-                            href="./index.html">Porfolios</a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="./cv.pdf">CV</a></li>
-                            <li><a href="mailto:pastre.toni@gmail.com">Contactez-moi</a></li>
-                            <li><a href="#btssio" onclick="openCity(event,
-                                    'Btssio')">Information sur le bts sio</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                    <nav style="background-color: grey;">
+                        <!-- Navbar content -->
+                        <div class="nav-wrapper">
+                            <a href="./index.html" class="active brand-logo"><i
+                                    class="material-icons">cloud</i>Porfolio</a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="./presentpersonnel.html">Présentation
+                                        Personnel</a></li>
+                                <li><a href="./presentbtssio.html">Présentation
+                                        Du BTS SIO</a></li>
+                                <li><a href="./travauxpersonnel.html">Travaux
+                                        Personnel</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./veilletechnologique.html">Veille
+                                        Technologique</a></li>
 
+                            </ul>
+                        </div>
+                    </nav>
 
-                <section>
-                    <article>
-                        <div class="row">
-                            <div class="col s12 m6">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="./monimage.jpg">
-                                        <span class="card-title">PASTRE Toni</span>
-                                        <a class="btn-floating halfway-fab
-                                            waves-effect waves-light red"><i
-                                                class="material-icons">add</i></a>
-                                    </div>
-                                    <div class="card-content">
-                                        <p>I am a very simple card. I am good at
-                                            containing small bits of
-                                            information. I am convenient because
-                                            I require little markup to use
-                                            effectively.</p>
+                    <section>
+                        <article>
+                            <br><br>
+                            <div class="card">
+                                <div class="section no-pad-bot"
+                                    id="index-banner">
+                                    <div class="container">
+                                        <br><br>
+                                        <h1 class="header center red-text">Bonjour
+                                            et
+                                            bienvenue sur mon Portefolio</h1>
+                                        <div class="row center">
+                                            <h5 class="header col s12 light">
+                                                Vous trouverez l'accès à la page
+                                                en
+                                                dessous, mais aussi dans barre
+                                                de
+                                                navigation</h5>
+                                        </div>
+                                        <div class="row center">
+                                            <a
+                                                href="./index.html"
+                                                class="btn-large
+                                                waves-effect waves-light black">Accueil</a>
+                                        </div>
+                                        <br><br>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Tab links -->
-                        <div class="tab">
-                            <button class="tablinks" onclick="openCity(event,
-                                'Btssio')">Btssio</button>
-                            <button class="tablinks" onclick="openCity(event,
-                                'formation')">Formation</button>
-                            <button class="tablinks" onclick="openCity(event,
-                                'Tokyo')">Tokyo</button>
-                        </div>
+                        </article>
 
-                        <!-- Tab content -->
-                        <div id="Btssio" class="tabcontent">
-                            <h3>Présentation du bts SIO</h3>
-                            <p id="btssio">Le BTS Services informatique aux
-                                Organisations
-                                est un
-                                diplôme reconnu
-                                par l’état de niveau Bac+2. Il remplace depuis
-                                septembre
-                                2011
-                                l’ancien BTS informatique de Gestion (BTS IG).
-                                En effet,
-                                cette
-                                nouvelle formule répond aux attentes de la
-                                profession en
-                                matière de
-                                qualification. Le programme a évolué en fonction
-                                de la
-                                place
-                                et du
-                                rôle des TIC (Technologies d’Information
-                                Communication)
-                                et
-                                propose
-                                deux spécialités bien distinctes : le BTS SIO
-                                SISR et le
-                                BTS
-                                SIO
-                                SLAM.
-
-                                Il associe aux enseignements théoriques et
-                                professionnels
-                                (en
-                                contrôle continu et final) deux stages en
-                                entreprise (10
-                                à
-                                11
-                                semaines réparties sur les deux années
-                                d’études).
-
-                                En plus des matières en lien avec l’ingénierie
-                                informatique,
-                                la
-                                formation propose également des enseignements de
-                                culture
-                                générale,
-                                d’anglais (avec la possibilité de continuer une
-                                LV2), de
-                                mathématiques appliquées à l’informatique, ainsi
-                                que sur
-                                les
-                                outils
-                                d’analyse économique, managériale et juridique
-                                des
-                                services
-                                informatiques.
-
-                                De plus, au cours de cette formation, il est
-                                possible de
-                                bénéficier
-                                d’un enseignement approfondi en mathématiques et
-                                de
-                                travailler en
-                                autonomie en laboratoire informatique.</p>
-                        </div>
-
-                        <div id="formation" class="tabcontent">
-                            <h3>Mon parcours professionnels</h3>
-                            <p>J'ai eu comme parcours :</p>
-                            <br>
-                            <p><strong>2018-2021</strong> : Lycée professionnel
-                                Robert Schuman à Avignon pour obtenir un
-                                baccalauréat professionnel Système numèrique(SN)
-                                option Réseaux informatique et système
-                                communiquant
-                                (RISC) ; <a href="diplomebac.JPG">Lien du bac</a></p>
-                            <br>
-                            <p><strong>2018-2021</strong> : Collège Simonve Veil
-                                à Châteaurenard ; <a href="./diplomebrevet.pdf">Lien
-                                    du Brevet</a></p>
-                            <br>
-                            <p><strong>2018-2021</strong> : Lycée professionnel
-                                Robert Schuman à Avignon </p>
-                        </div>
-
-                        <div id="Tokyo" class="tabcontent">
-                            <h3>Tokyo</h3>
-                            <p>Tokyo is the capital of Japan.</p>
-                        </div>
                         <br><br>
-                        <br><br>
-                        <br><br>
-                        <br><br>
-                    </article>
+                        <footer class="page-footer grey">
+                            <div class="footer-copyright">
+                                <div class="container">
+                                    © 2021 Toni PASTRE
+                                </div>
+                            </div>
+                        </footer>
 
-                    <footer class="page-footer">
-                        <div class="footer-copyright">
-                          <div class="container">
-                          © 2021 PASTRE Technologies
-                          </div>
-                        </div>
-                      </footer>
+                    </body>
 
-                </body>
-
-            </html>
+                </html>
