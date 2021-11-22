@@ -1,122 +1,7 @@
-body {
-    background-color: black;
-}
 
-article {
 
-    color: white;
 
-}
 
-a:active:visited {
-    color: rgb(88, 20, 88);
-}
-
-a:link {
-    color: rgb(10, 10, 141);
-}
-
-nav {
-    text-align: center;
-    background-color: rgb(59, 57, 80);
-    list-style-type: none;
-    float: left;
-}
-
-.navbarul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navbarli {
-    float: left;
-}
-
-#hautpage {
-
-    font-size: 30px;
-
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-a:hover {
-    color: antiquewhite;
-    background-color: rgb(107, 107, 107);
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-input:read-only {
-    background: cyan;
-}
-
-.navbarul:hover {
-    animation-duration: 5s;
-    animation-name: disco;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes disco {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:0px; top:0px;}
-    50%  {background-color:blue; left:0px; top:0px;}
-    75%  {background-color:green; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
-  }
-
-.navbarul {
-    animation-name: basnav;
-    animation-duration: 10s;  
-    animation-fill-mode: forwards;
-}
-
-@keyframes basnav {
-    from {top: 0px;}
-    to {top: 200px; background-color: grey;}
-  }
-
-  #btssio {
-    animation-duration: 2s;
-    animation-name: glissement;
-  }
-  @keyframes glissement {
-    from {
-      margin-left: 100%;
-      width: 150%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-  
-  @keyframes myfirst {
-    0%   {background-color:red; left:0px; right:0px;}
-    25%  {background-color:yellow; left:200px; right:0px;}
-    50%  {background-color:blue; left:200px; right:200px;}
-    75%  {background-color:green; left:0px; right:200px;}
-    100% {background-color:red; left:0px; right:0px;}
-  }
 
   /* Style the tab */
 .tab {
@@ -152,4 +37,31 @@ input:read-only {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
