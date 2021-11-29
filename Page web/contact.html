@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Porfolios</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <head>
+
+    <body>
+
+
+        <nav>
+            <nav style="background-color: grey;">
+                <!-- Navbar content -->
+                <div class="nav-wrapper">
+                    <a href="./index.html" class="active brand-logo"><i class="material-icons">cloud</i>Porfolio</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="./presentpersonnel.html">Présentation
+                                Personnel</a></li>
+                        <li><a href="./presentbtssio.html">Présentation
+                                Du BTS SIO</a></li>
+                        <li><a href="./travauxpersonnel.html">Travaux
+                                Personnel</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./veilletechnologique.html">Veille
+                                Technologique</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <script>
+                const form = document.getElementById("contact-form");
+
+                //1.
+                const formEvent = form.addEventListener("submit", (event) => {
+                    event.preventDefault();
+
+                    //2.
+                    let mail = new FormData(form);
+
+                    //3.
+                    sendMail(mail);
+                })
+            </script>
+            <section>
+                <article>
+                    <form action="http://localhost:3000/send" method="post" class="contact-form">
+                        <input type="text" class="contact-form-text" placeholder="Your name" name="yourname" required />
+                        <input type="email" class="contact-form-text" placeholder="Your email" name="youremail"
+                            required />
+                        <input type="text" class="contact-form-text" name="yoursubject" placeholder="Subject"
+                            required />
+                        <textarea class="contact-form-message" placeholder="Your message" name="yourmessage"></textarea>
+                        <input type="submit" id="form-submit" class="contact-form-btn" value="Send" required />
+                    </form>
+                    </div>
+                </article>
+            </section>
+            <br><br><br><br>
+            <footer class="page-footer grey">
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2021 Toni PASTRE
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+
+</html>
