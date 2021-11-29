@@ -8,6 +8,7 @@ var compression = require('compression'),
     port = process.env.PORT || 3000;
 
 app.listen(port)
+var bodyParser = require("body-parser");
 
 /*une fois que vous avez l'intention de traiter des fichiers texte d'une taille supérieure à environ 10 Mo
 ,je vous conseille de laisser tomber readFile et de commencer à utiliser les flux(fs.readfilestream).
@@ -16,8 +17,18 @@ app.listen(port)
 const path = require('path')
 app.use('/',  express.static(path.join(__dirname, 'Page web')))
 
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/send',async function (req, res, next) {
+
+ 
+
+
+app.post('/send',async function (request, res, next) {
+    var yourname = request.body.yourname; 
+    var youremail = request.body.youremail; 
+    var yoursubject = request.body.yoursubject
+    var yourmessage = request.body.yourmessage
+    console.log(`${yourname} ${youremail} ${yoursubject} ${yourmessage}`);
     await main()
     next();
   }, function (req, res) {

@@ -37,7 +37,12 @@
 h2 {
     color: red;
 }
-
+h5 {
+    color: red;
+}
+h4 {
+    color: red;
+}
 p {
     color: red;
     animation-duration: 1s;
