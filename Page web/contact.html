@@ -12,51 +12,48 @@
 
     <head>
 
-    <body>
+        <body>
 
 
-        <nav>
-            <nav style="background-color: grey;">
-                <!-- Navbar content -->
-                <div class="nav-wrapper">
-                    <a href="./index.html" class="active brand-logo"><i class="material-icons">cloud</i>Porfolio</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="./presentpersonnel.html">Présentation
+            <nav>
+                <nav style="background-color: grey;">
+                    <!-- Navbar content -->
+                    <div class="nav-wrapper">
+                        <a href="./index.html" class="active brand-logo"><i class="material-icons">cloud</i>Porfolio</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="./presentpersonnel.html">Présentation
                                 Personnel</a></li>
-                        <li><a href="./presentbtssio.html">Présentation
+                            <li><a href="./presentbtssio.html">Présentation
                                 Du BTS SIO</a></li>
-                        <li><a href="./travauxpersonnel.html">Travaux
+                            <li><a href="./travauxpersonnel.html">Travaux
                                 Personnel</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./veilletechnologique.html">Veille
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./veilletechnologique.html">Veille
                                 Technologique</a></li>
 
-                    </ul>
-                </div>
-            </nav>
-            <section>
-                <article>
-                    <form action="http://localhost:3000/send" method="post" class="contact-form">
-                        <input type="text" class="contact-form-text" placeholder="Your name" name="yourname" required />
-                        <input type="email" class="contact-form-text" placeholder="Your email" name="youremail"
-                            required />
-                        <input type="text" class="contact-form-text" name="yoursubject" placeholder="Subject"
-                            required />
-                        <textarea class="contact-form-message" placeholder="Your message" name="yourmessage"></textarea>
-                        <input type="submit" id="form-submit" class="contact-form-btn" value="Send" required />
-                    </form>
+                        </ul>
                     </div>
-                </article>
-            </section>
-            <br><br><br><br>
-            <footer class="page-footer grey">
-                <div class="footer-copyright">
-                    <div class="container">
-                        © 2021 Toni PASTRE
+                </nav>
+                <section>
+                    <article>
+                        <form action="/send" method="post" class="contact-form">
+                            <input type="email" class="contact-form-text" placeholder="Votre email" name="youremail" required />
+                            <input type="text" class="contact-form-text" name="yoursubject" placeholder="Subject" required />
+                            <textarea class="contact-form-message" placeholder="Ton message" name="yourmessage"></textarea>
+                            <input type="submit" id="form-submit" class="contact-form-btn" value="Send" required />
+                        </form>
+                        </div>
+                    </article>
+                </section>
+                <br><br><br><br>
+                <footer class="page-footer grey">
+                    <div class="footer-copyright">
+                        <div class="container">
+                            © 2021 Toni PASTRE
+                        </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
 
-    </body>
+        </body>
 
 </html>
