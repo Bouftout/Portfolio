@@ -24,23 +24,28 @@
 }
 
 .tabcontent {
-    background-color: black;
+    background-color: rgba(27, 20, 20, 0.336);
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
 
+.tablinks {
+    color: black;
+}
+
 h2 h5 h4 {
-    color: red;
+    color: black;
 }
 
 h4 {
-    color: red;
+    color: black;
 }
 
 p {
-    color: red;
+    font-size: 30px;
+    color: black;
     animation-duration: 1s;
     animation-name: slidein;
 }
@@ -54,4 +59,31 @@ p {
         margin-left: 0%;
         width: 100%;
     }
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
