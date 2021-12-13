@@ -34,19 +34,53 @@
                         </ul>
                     </div>
                 </nav>
+                <script>
+                    function envoie() {
+                        document.getElementById("form-submit").classList.add('disabled');
+                        alert("Message Envoyer")
+                    }
+
+                    function contact() {
+                        document.getElementById("form-submit").classList.remove('disabled');
+
+                    }
+                </script>
                 <section>
                     <article>
-                        <form action="/send" method="post" class="contact-form">
-                            <input type="email" class="contact-form-text" placeholder="Votre email" name="youremail" required />
-                            <input type="text" class="contact-form-text" name="yoursubject" placeholder="Subject" required />
-                            <textarea class="contact-form-message" placeholder="Ton message" name="yourmessage"></textarea>
-                            <input type="submit" id="form-submit" class="contact-form-btn" value="Send" required />
+                        <form action="/send" method="post" class="contact-form" onclick="javascript:contact()">
+                            <div class="row">
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                <div class="input-field col s6">
+
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="contact-form-text validate" placeholder="Votre email" name="youremail" required />
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">subject</i>
+                                    <input id="subject" type="text" class="contact-form-text" name="yoursubject" placeholder="Ton Suject" required />
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea class="contact-form-message materialize-textarea" placeholder="Ton message" name="yourmessage"></textarea>
+
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light disabled" type="submit" id="form-submit" value="Send" onclick="javascript:envoie()" required>Envoyer</button>
+
                         </form>
                         </div>
                     </article>
                 </section>
-                <br><br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
                 <footer class="page-footer grey">
                     <div class="footer-copyright">
                         <div class="container">
