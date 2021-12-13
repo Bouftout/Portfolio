@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <head>
 
@@ -35,6 +36,30 @@
                     </div>
                 </nav>
 
+                <script>
+                    let date1 = new Date();
+
+
+                    let annee = date1.getFullYear();
+
+                    let monage = annee - 2003
+
+
+
+                    function monScript() {
+                        $('#ageid span').html('<strong>18</strong>');
+                        console.log('HTML prêt !');
+                    }
+
+                    if (document.readyState === 'complete') {
+                        monScript();
+                    } else {
+                        document.addEventListener('DOMContentLoaded', function() {
+                            monScript();
+                        });
+                    }
+                </script>
+
                 <section>
                     <article>
                         <br><br>
@@ -44,9 +69,15 @@
                                     <br><br>
                                     <h1 class="header center red-text">Rebonjour,je me présente ;</h1>
                                     <div class="row center">
-                                        <h4 class="header col s12 light">
-                                            Je m'appelle Toni PASTRE, j'ai 18 ans et je suis actuellement en BTS SIO
-                                        </h4>
+                                        <h4 id="ageid" class="header col s12 light">
+                                            Je m'appelle Toni PASTRE, j'ai
+                                            <span> 
+                                               17
+                                            </span> ans et je suis actuellement en BTS SIO au lycée privée Charles Peguy à Marseille</h4>
+
+
+
+
                                         <div class="row center">
                                             <a href="/cv" class="btn-large
                                                     waves-effect waves-light black">Download CV</a>
@@ -81,8 +112,26 @@
                     </article>
 
 
-                    <br><br><br><br>
+                    <br><br><br><br><br><br>
+                    <br><br><br><br><br><br>
                     <footer class="page-footer grey">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col l6 s12">
+                                    <h5 class="white-text">Source</h5>
+                                    <p class="grey-text text-lighten-4">Vous trouverez sur la droite toute les source utulisée pour faire ce site Web.</p>
+                                </div>
+                                <div class="col l4 offset-l2 s12">
+                                    <h5 class="white-text">Lien</h5>
+                                    <ul>
+                                        <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Materialize</a></li>
+                                        <li><a class="grey-text text-lighten-3" href="https://nodejs.org/en/">Node.js</a></li>
+                                        <li><a class="grey-text text-lighten-3" href="https://fonts.googleapis.com/icon?family=Material+Icons">îcone</a></li>
+                                        <li><a class="grey-text text-lighten-3" href="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">Jquery</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="footer-copyright">
                             <div class="container">
                                 © 2021 Toni PASTRE
