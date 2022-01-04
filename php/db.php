@@ -1,10 +1,9 @@
 <?php
-
-$connection=mysqli_connect("mysql-pastre.alwaysdata.net", "pastre", "totoni13", "pastre_indexsql");
-if (!$connection){
-    die ("Connection impossible");
-}
-else {
-    $requete=mysqli_query($connection,"SELECT * FROM game");
-}
+$dbh = new PDO('mysql:host=mysql-pastre.alwaysdata.net;dbname=pastre_indexsql', 'pastre', 'totoni13');
+// utiliser la connexion ici
+$sth = $dbh->query('SELECT * FROM game');
+echo '<p>' + '</p>';
+// et maintenant, fermez-la !
+$sth = null;
+$dbh = null;
 ?>
