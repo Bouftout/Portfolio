@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="exercice2.css" />
+    <script rel="exercice2.js"></script>
+  </head>
+  <body onload="init()">
+    <div>
+      <article id="parent">
+        <form id="myForm">
+          <input type="button" id="child" value="Cliquez ici" />
+        </form>
+
+        <p>Battle d'événement !</p>
+        Parent : <span id="parent-count">0</span>
+      </article>
+      <a type="button" class="link" onclick="child()" id="child2"
+        >Cliquez ici</a
+      >
+      Enfant :
+      <span id="child-count">0</span>
+    </div>
+    <script type="text/javascript" src="exercice2.js"></script>
+  </body>
+</html>
