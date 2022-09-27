@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('./head'); %>
+</head>
+
+<body>
+
+    <header>
+        <%- include('./header'); %>
+    </header>
+
+    <script>
+        function envoie() {
+            if (validate() == true) {
+                document.getElementById("form-submit").classList.add('disabled');
+                alert("Votre message a était envoyer vous allez être rediriger sur cet accueil")
+            } else {
+                document.getElementById("form-submit").classList.remove('disabled');
+                alert("Veuillez remplir le formulaire")
+
+            }
+
+
+        }
+
+
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validate() {
+            var $result = $("#result");
+            var email = $("#email").val();
+            var subject = $("#subject").val();
+            $result.text("");
+            if (email != "" && subject != "") {
+                if (validateEmail(email)) {
+                    document.getElementById("form-submit").classList.remove('disabled');
+                    $result.text(email + " est valide :)");
+                    $result.css("color", "green");
+                    return true;
+                } else {
+                    $result.text(email + "n'est valide :(");
+                    document.getElementById("form-submit").classList.add('disabled');
+
+                    $result.css("color", "red");
+                }
+                return false;
+            } else if (subject != "") {
+                document.getElementById("form-submit").classList.add('disabled');
+
+                $result.text("Veuillez mettre une adresse email");
+                $result.css("color", "red");
+                return false;
+            } else if (email != "") {
+
+                document.getElementById("form-submit").classList.add('disabled');
+
+                $result.text("Veuillez mettre un Suject");
+                $result.css("color", "red");
+                return false;
+            }
+        }
+
+        $("#form-submit").bind("click", validate);
+    </script>
+
+
+    <section>
+
+        <article>
+            <form action="/send" method="post" class="contact-form" onclick="javascript:validate()">
+                <div class="row">
+                    <h5 id="result">result</h5>
+                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    <div class="input-field col s6">
+
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="contact-form-text validate" placeholder="Votre email" name="youremail" required />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">subject</i>
+                        <input id="subject" type="text" class="contact-form-text" name="yoursubject" placeholder="Ton Suject" required />
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea class="contact-form-message materialize-textarea" placeholder="Ton message" name="yourmessage"></textarea>
+
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light disabled" type="submit" id="form-submit" value="Send" onclick="javascript:envoie()" required>Envoyer</button>
+
+            </form>
+            </div>
+        </article>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <footer class="page-footer grey">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Toni PASTRE
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

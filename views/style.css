@@ -1,10 +1,14 @@
-.tab {
+* {
+    box-sizing: border-box
+}
+
+.tabou {
     overflow: hidden;
     border: 5px solid #ccc;
     background-color: #f1f1f1;
 }
 
-.tab button {
+.tabou button {
     background-color: inherit;
     float: left;
     border: none;
@@ -15,15 +19,15 @@
     font-size: 20px
 }
 
-.tab button:hover {
+.tabou button:hover {
     background-color: #ddd;
 }
 
-.tab button.active {
+.tabou button.active {
     background-color: #ccc;
 }
 
-.tabcontent {
+.taboucontent {
     background-color: rgba(27, 20, 20, 0.336);
     display: none;
     padding: 6px 12px;
@@ -31,15 +35,14 @@
     border-top: none;
 }
 
-.tablinks {
+.taboulinks {
     color: black;
 }
 
-h2 h5 h4 {
-    color: black;
-}
-
-h4 {
+h2,
+h5,
+h4,
+h3 {
     color: black;
 }
 
@@ -61,113 +64,67 @@ p {
     }
 }
 
-
-/* label color */
-
 .input-field label {
     color: #000;
 }
 
-
-/* label focus color */
-
 .input-field input[type=text]:focus+label {
     color: rgb(46, 45, 45);
 }
-
-
-/* label underline focus color */
 
 .input-field input[type=text]:focus {
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 0 #000;
 }
 
-
-/* valid color */
-
 .input-field input[type=text].valid {
     border-bottom: 5px solid rgb(5, 189, 36);
     box-shadow: 0 5px 0 0 #000;
 }
-
-
-/* invalid color */
 
 .input-field input[type=text].invalid {
     border-bottom: 5px solid rgb(255, 0, 0);
     box-shadow: 0 5px 0 0 #000;
 }
 
-
-/* icon prefix focus color */
-
 .input-field .prefix.active {
     color: rgb(22, 18, 18);
 }
 
-
-/* Make sure that padding behaves as expected */
-
-* {
-    box-sizing: border-box
-}
-
-
-/* Container for skill bars */
-
 .container {
     width: 100%;
-    /* Full width */
 }
 
 .skills {
     text-align: right;
-    /* Right-align text */
     padding-top: 10px;
-    /* Add top padding */
     padding-bottom: 10px;
-    /* Add bottom padding */
     color: white;
-    /* White text color */
 }
 
 .html {
-    width: 60%;
-    background-color: #04AA6D;
+    width: 90%;
+    background-color: #57103c;
 }
 
-
-/* Green */
-
 .css {
-    width: 80%;
+    width: 40%;
     background-color: #2196F3;
 }
 
-
-/* Blue */
-
 .js {
-    width: 90%;
+    width: 80%;
     background-color: #f44336;
 }
 
-
-/* Red */
-
-.php {
-    width: 50%;
-    background-color: #808080;
+.nodejs {
+    width: 30%;
+    background-color: #008b4a;
 }
 
-.tabcontent {
+.taboucontent {
     animation: fadeEffect 1s;
-    /* Fading effect takes 1 second */
 }
-
-
-/* Go from zero to full opacity */
 
 @keyframes fadeEffect {
     from {
