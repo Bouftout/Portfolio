@@ -1,14 +1,6 @@
 function age() {
 
-    let date1 = new Date();
-
-
-    let annee = date1.getFullYear();
-
-    let monage = annee - 2003
-
-    $('#ageid span').html(`${monage}`);
-    console.log('HTML prêt !');
+    document.getElementById("ageid").innerText = new Date().getFullYear() - 2003;
 }
 
 window.onload = function() {

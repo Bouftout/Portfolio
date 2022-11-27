@@ -4,9 +4,10 @@
     "description": "site web en cours(serv node.js)",
     "main": "index.js",
     "scripts": {
-        "test": "nodemon index.js",
-        "start": "node index.js"
-    },
+        "test": "nodemon index.js --ignore ./src",
+        "start": "node index.js",
+        "deploy": "node ftpdeploy.js"
+      },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Bouftout/sitewebcours.git"
