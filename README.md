@@ -1,15 +1,15 @@
-> ![UpOrDown](https://img.shields.io/website-up-down-green-red/http/tonipastre.alwaysdata.net)
-![Watcher](https://img.shields.io/github/watchers/Boufout/Portfolio.svg)
+![UpOrDown](https://img.shields.io/website-up-down-green-red/http/tonipastre.alwaysdata.net)
+![Watcher](https://img.shields.io/github/watchers/Bouftout/Portfolio?style=social)
 <h1 align="center">Portfolio</h1>
 
 <p align="center"></p>
  <br>
 
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://www.npmjs.com/package/express)
 
 ## Links
 
-- [Thewebsite](https://github.com/Bouftout/Portfolio "This website")
+- [This website](https://github.com/Bouftout/Portfolio)
 
 - [Repo](https://github.com/Bouftout/Portfolio "Portfolio Repo")
 
