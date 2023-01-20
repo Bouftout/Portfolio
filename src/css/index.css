@@ -1,0 +1,347 @@
+/*CSS COPYRIGHT TONI AND ALAN */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+navbar>div>button:disabled {
+    opacity: 0.5;
+    color: black;
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    height: auto;
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    margin: 0px;
+
+}
+
+.sticky {
+    background-image: url('../img/banner.jpg');
+    background-size: cover !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+body {
+    height: 100vh;
+    widows: 100%;
+    /* background-color: #21a3ce; */
+    background-color: #000;
+}
+
+h1,
+input {
+    color: white;
+    justify-content: center;
+    margin: 10px 5px;
+    position: static;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.twobutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+
+}
+
+.twobutton>button {
+    width: 45%;
+    height: 10%;
+    border: none;
+    background-color: #F5F5F5;
+    font-weight: 600;
+    color: #4F4F4F;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.boxiall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box {
+    position: relative;
+    width: 400px;
+    
+    background: #bd4d0b;
+    margin: 50px;
+    border: 5px solid whitesmoke;
+}
+
+.box>p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding: 50px;
+}
+
+
+.box>h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 180px;
+}
+
+
+
+.box>form>input {
+    color: #fff;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.box>form>label {
+    z-index: -7;
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.box input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #EEF1FF;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.box input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+.box>form>input input:focus~label,
+.box>form>input input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ea15bc;
+    font-size: 12px;
+}
+
+
+.box>form>div>button {
+    border: none;
+    outline: none;
+    background: #D2DAFF;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.box>form button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+
+
+navbar button {
+    border: none;
+    outline: none;
+    background: #D2DAFF;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+navbar>div>button {
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+navbar button:hover,
+navbar button:focus {
+    color: white;
+}
+
+
+
+navbar div {
+    display: flex;
+    /* or display:grid */
+    justify-content: center;
+}
+
+navbar>div>ul>button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border: groove 2px #55080869;
+    border-radius: 10px;
+}
+
+.espace {
+    margin: 0 10px;
+}
+
+.searchbar {
+    font-size: 2.4rem;
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    padding: 2rem;
+    transition: all 0.1s;
+    transition-delay: 0.1s;
+}
+
+.searchbar::placeholder {
+    opacity: 0.3;
+}
+
+
+.container {
+    background-image: url('../img/ninjabanner.jpg');
+    background-size: cover !important;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border: 1px solid white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    /* border-radius: 10px; */
+    background-color: #f5f5f5;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 98%;
+}
+
+.container button {
+    border: none;
+    outline: none;
+    background: #AAC4FF;
+    color: black;
+    padding: 8px 20px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+
+input[type=search] {
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 80%;
+    background-color: whitesmoke;
+}
+
+input[type=search] {
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/searchicon.png');
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: monospace;
+    text-align: left;
+    border: 1px solid grey;
+}
+
+th {
+    background-color: #D2DAFF;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+tr {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+
+
+.none {
+    display: none;
+}

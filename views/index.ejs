@@ -1,66 +1,35 @@
-<!DOCTYPE html>
-<html lang="fr">
+<%- include('./partials/head', {title:'Bienvenue'}) %>
 
-<head>
-    <%- include('./head'); %>
-</head>
+  <div id="container" class="container center">
+    <h1>
+      Bonjour et bienvenue sur le Portfolio de PASTRE Toni<br>
+      Vous trouverez un accès dans la barre de navigation
+    </h1>
+  </div>
 
-<body>
+  <div class="boxiall">
 
-    <header>
-        <%- include('./header'); %>
-    </header>
+    <div class="box">
+      <h1>Qui suis je ?</h1>
+      <img src="../src/img/manga.jpg">
+    </div>
 
+    <div class="box">
+      <h1>Mon parcours</h1>
+      <img src="../src/img/ninjabanner.jpg">
+    </div>
 
-    <section>
-        <article>
-            <br><br>
-            <div class="card">
-                <div class="section no-pad-bot" id="index-banner">
-                    <div class="container">
-                        <br><br>
-                        <h1 class="header center red-text">Bonjour et bienvenue sur le Portfolio de PASTRE Toni</h1>
-                        <div class="row center">
-                            <h4 class="header col s12 light">
-                                Vous trouverez l'accès aux autre pages dans la barre de navigation
-                            </h4>
-                        </div>
-                        <br><br>
-                    </div>
-                </div>
-            </div>
+    <div class="box">
+      <h1>Mes project</h1>
+      <img src="../src/img/project.jpg">
+    </div>
+  </div>
+  <!-- <div id="container" class="container">
+<h1>Projet pour créer des pokémons et combattre d'autres pokémons uniquement entre 2 joueurs(en dev)</h1>
+<img src="../src/img/poke.jpg">
 
-        </article>
+    <div> -->
 
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <footer class="page-footer grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Source</h5>
-                        <p class="grey-text text-lighten-4">Vous trouverez sur la droite toute les source utulisée pour faire ce site Web.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Lien</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Materialize</a>
-                            </li>
-                            <li><a class="grey-text text-lighten-3" href="https://nodejs.org/en/">Node.js</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://fonts.googleapis.com/icon?family=Material+Icons">îcone</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">Jquery</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2021 Toni PASTRE
-                </div>
-            </div>
-        </footer>
+  </body>
 
-</body>
-
-</html>
+  </html>

@@ -18,6 +18,7 @@ const config = {
         "node_modules/**/.*",
         ".git/**",
         "src/people/*",
+        "V1/**"
     ],
     // delete ALL existing files at destination before uploading, if true
     deleteRemote: false,
