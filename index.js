@@ -17,6 +17,35 @@ app.use('/src', express.static(path.join(__dirname, 'src')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
+
+// server-sent event stream
+app.get('/dormir', function (req, res) {
+    res.setHeader('Content-Type', 'text/event-stream')
+    res.setHeader('Cache-Control', 'no-cache')
+
+    // send a ping approx every 2 seconds
+    var timer = setInterval(function () {
+        res.write('zzzzzzzz\n')
+        res.flushHeaders();
+    }, (Math.random() * 1000))
+
+    res.on('close', function () {
+        clearInterval(timer)
+    })
+});
+
 app.get('/', function (req, res) {
     res.render('index.ejs')
+})
+
+app.get('/quisuisje', function (req, res) {
+    res.render('quisuisje.ejs')
+})
+
+app.get('/monparcour', function (req, res) {
+    res.render('monparcour.ejs')
+})
+
+app.get('/mesproject', function (req, res) {
+    res.render('mesproject.ejs')
 })
