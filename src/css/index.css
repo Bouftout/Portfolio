@@ -36,52 +36,29 @@ navbar {
 
 
 body {
-    height: 100vh;
-    widows: 100%;
-    /* background-color: #21a3ce; */
     background-color: #000;
 }
 
 h1,
-input {
+input,h3,p {
     color: white;
     justify-content: center;
-    margin: 10px 5px;
-    position: static;
     justify-items: center;
     align-items: center;
     text-align: center;
 }
-
-.twobutton {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 80%;
-    margin-top: 20px;
-
+li {
+    color: whitesmoke;
 }
 
-.twobutton>button {
-    width: 45%;
-    height: 10%;
-    border: none;
-    background-color: #F5F5F5;
-    font-weight: 600;
-    color: #4F4F4F;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
-
-}
 
 .flexcenter {
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .boxiall {
@@ -90,18 +67,19 @@ input {
     background-color: #00252a;
     box-shadow: 0 20px 40px -14px rgb(255 255 255 / 25%);
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: auto;
 }
-
-
-
 
 
 .box {
     position: relative;
     width: 400px;
-    
-    background: #bd4d0b;
-    margin: 50px;
+    background: #3f51b5;
+    margin: 15px;
     border: 5px solid whitesmoke;
 }
 
@@ -112,8 +90,16 @@ p {
     text-align: center;
 }
 
+.pp + .container {
+    width: 95%;
+    position: relative;
+    height: auto;
+    /* margin-bottom: 20px; */
+}
 
-.box>h1,.flexcenter>h1 {
+
+.box>h1,
+.flexcenter>h1 {
     display: flex;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -128,82 +114,6 @@ p {
     width: 80%;
     height: 180px;
 }
-
-
-
-.box>form>input {
-    color: #fff;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid #fff;
-    outline: none;
-}
-
-.box>form>label {
-    z-index: -7;
-    position: relative;
-    color: #ffffff;
-    letter-spacing: 1px;
-    font-size: 13px;
-    transition: .4s;
-}
-
-.box input[type="submit"] {
-    border: none;
-    outline: none;
-    background: #EEF1FF;
-    color: black;
-    padding: 8px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.box input[type="submit"]:hover {
-    transform: scale(1.1);
-    transition: .3s;
-    cursor: pointer;
-}
-
-
-
-.box>form>input input:focus~label,
-.box>form>input input:valid~label {
-    top: -20px;
-    left: 0;
-    color: #ea15bc;
-    font-size: 12px;
-}
-
-
-.box>form>div>button {
-    border: none;
-    outline: none;
-    background: #D2DAFF;
-    color: black;
-    padding: 8px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.box>form button:hover {
-    transform: scale(1.1);
-    transition: .3s;
-    cursor: pointer;
-}
-
-
-
-
 
 navbar button {
     border: none;
@@ -229,8 +139,8 @@ navbar>div>button {
 }
 
 
-navbar button:hover,
-navbar button:focus {
+button:hover,
+button:focus {
     color: white;
 }
 
@@ -254,63 +164,27 @@ navbar>div>ul>button {
     top: 9%;
 }
 
-.espace {
-    margin: 0 10px;
-}
-
-.searchbar {
-    font-size: 2.4rem;
-    width: 20rem;
-    height: 2rem;
-    border: none;
-    outline: none;
-    border-radius: 10rem;
-    padding: 2rem;
-    transition: all 0.1s;
-    transition-delay: 0.1s;
-}
-
-.searchbar::placeholder {
-    opacity: 0.3;
-}
 
 
 .container {
     background-image: url('../img/ninjabanner.jpg');
     background-size: cover !important;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    overflow:auto;
     border: 2px solid #00bcd4;
     padding: 1rem;
-    /* border-radius: 10px; */
     background-color: #f5f5f5;
     box-shadow: 0 20px 40px -14px rgb(255 255 255 / 25%);
     display: flex;
-    overflow: hidden;
     width: 98%;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    /* z-index: -99; */
+    align-items: stretch;
     flex-direction: column;
-}
-
-.pp>img {
-    width: auto;
-    height: auto;
-    border-radius: 50px;
+    margin-top: 20px;
 }
 
 
-.container button {
-    border: none;
-    outline: none;
-    background: #AAC4FF;
-    color: black;
-    padding: 8px 20px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    width: 100%;
-    text-align: center;
-}
 
 
 input[type=search] {
@@ -368,4 +242,216 @@ td {
 
 .none {
     display: none;
+}
+
+.skillcontainer {
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    color: #D2DAFF;
+}
+
+.comptperso {
+    color: #000000;
+    margin-top: 20px;
+}
+
+
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ED4264;
+    --highlight2: #FFEDBC;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head:
+    "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+}
+
+.list {
+    list-style: none;
+    width: auto;
+    max-width: 90%;
+}
+
+.list>li {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.list>li:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+
+
+.list>li>h2 {
+    padding: 0rem 0 0 0;
+    margin: 0 0 1rem 0;
+    font: normal 2rem var(--font-head);
+}
+
+.list>li>span {
+    color: white;
+}
+
+.list>li>h2 {
+    color: whitesmoke;
+}
+
+.list>li img,
+
+.list>li button {
+    position: absolute;
+    width: 11%;
+    float: right;
+    bottom: 1%;
+    left: 100%;
+}
+
+.list>li a {
+    outline: auto;
+    width: 11%;
+    float: right;
+    bottom: 65px;
+    left: 11%;
+    text-align: center;
+    background-color: #000;
+    margin-bottom: 50px;
+}
+
+.image {
+    position: relative;
+    transition: all 1s ease;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    top: 50px;
+
+}
+
+.image:hover {
+    transition: all 1s ease;
+    filter: none;
+    z-index: 100;
+}
+
+.container button {
+    border: 1px solid #00bcd4;
+    outline: none;
+    background: #3f51b5;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+a {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+a:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nfour;
+}
+.list a:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+
+.js a:hover:before {
+    right: 10%;
+	left: auto;
+	width: 100%;
+}
+
+a:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: #57103c;
+}
+
+.css {
+    width: 40%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 80%;
+    background-color: #f44336;
+}
+
+.nodejs {
+    width: 30%;
+    background-color: #008b4a;
+}
+
+
+
+.flexenbas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box>ul>li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.box>h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

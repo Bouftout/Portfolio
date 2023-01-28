@@ -22,8 +22,10 @@ document.addEventListener('DOMContentLoaded', async event => {
 
         }
 
-    });
+    });    
+
 
 })
 
 //    <%- include('./partials/head', {title:'Princi',script:'index',css:'index'}) %>
+

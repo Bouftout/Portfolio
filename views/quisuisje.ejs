@@ -1,35 +1,233 @@
 <%- include('./partials/head', {title:'Qui suis je ?'}) %>
 
 
-<div class="flexcenter">
-    
-
-      <div class="box pp">
-        <h1>Qui suis je ?</h1>
-        <img alt="Image de profil" src="../src/img/pp.jpg">
-        <h3>PASTRE Toni</h3>
-      </div>
+    <div id="pp" class="flexcenter pp">
 
 
-   
-  </div>
+        <div class="box">
+            <h1>Qui suis je ?</h1>
+            <svg viewBox="40 50 250 200" xmlns='http://www.w3.org/2000/svg'>
 
-  <div id="container" class="container center">
-    <p>
-        Fusce elementum est nec risus imperdiet rhoncus. Fusce scelerisque, turpis eget tristique lacinia, nunc lorem pulvinar quam, in laoreet risus nibh non risus. Nullam ac mauris facilisis, viverra magna id, porttitor sapien. Suspendisse sed elementum mauris. Vivamus fermentum semper mauris, sit amet vestibulum lacus venenatis id. Quisque vitae ultricies metus, eget rutrum nulla. Morbi a nisi et ex consequat ultricies.
+                <filter id='noise' x='2%' y='0%' width='100%' height='100%'>
+                    <feTurbulence baseFrequency="0.02 0.6" result="NOISE" numOctaves="2" />
+                    <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20" xChannelSelector="R"
+                        yChannelSelector="R"></feDisplacementMap>
+                </filter>
+                <!-- 		<rect width='100%' height='100%' filter='url(#challengeNoise)' /> -->
+                <image class="image" xlink:href="../src/img/pp.jpg" x="60" y="50" filter="url(#noise)">
+                </image>
 
-Ut pretium consectetur aliquet. Donec posuere, lectus at lacinia blandit, nibh ipsum fermentum magna, et bibendum nunc metus nec nisl. Suspendisse posuere risus eget lacus luctus, vitae hendrerit nulla condimentum. Integer pulvinar quam sit amet orci elementum condimentum. Pellentesque in magna neque. Maecenas blandit quis ante vel facilisis. Pellentesque sit amet consectetur neque. Aenean fringilla justo et fermentum condimentum. Pellentesque elementum felis a justo tempus, vitae eleifend nibh molestie. Nam tincidunt, diam vel pretium hendrerit, purus nibh consectetur sem, quis imperdiet dolor libero id tortor. Nullam tempor lectus et venenatis imperdiet. Praesent vitae nibh arcu. Vivamus eleifend, elit quis fringilla porttitor, eros ipsum sagittis ex, in euismod arcu arcu ut tellus. Curabitur mollis bibendum ligula. Integer tempor, elit in faucibus egestas, quam nibh aliquam velit, sed placerat odio elit eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </svg>
+            <!-- <img alt="Image de profil" src="../src/img/pp.jpg"> -->
+            <h3>PASTRE Toni</h3>
+        </div>
 
-Pellentesque varius ipsum lorem, eget mattis sapien imperdiet at. Proin sit amet magna dolor. Suspendisse nec vestibulum nisl. Vestibulum arcu justo, vestibulum at eros et, bibendum lacinia sem. Curabitur id massa nec est faucibus cursus in vel eros. Aliquam eu augue mattis, ornare libero ut, eleifend ex. Nulla placerat elit libero, vel malesuada mi euismod ac. Nulla facilisi.
-
-Quisque ut placerat mi, quis dignissim dui. Curabitur a tortor eget turpis efficitur facilisis. Proin pharetra id ante quis pharetra. In mauris est, lacinia vel aliquet at, aliquam in eros. Suspendisse gravida volutpat nunc nec ultrices. Mauris dictum a erat non elementum. Aliquam at lectus tincidunt, interdum massa in, egestas est. Quisque mollis turpis quam, quis fringilla sapien auctor et. Sed sit amet consectetur dui, vel tristique nisl. Sed efficitur non mi quis mollis.
-
-Suspendisse feugiat ante a magna pharetra, eget mattis enim tincidunt. Aliquam libero mi, ultricies sed viverra nec, ornare at turpis. Ut finibus tortor imperdiet, tincidunt purus sed, consectetur risus. Maecenas varius interdum sodales. Pellentesque convallis in enim sit amet laoreet. Morbi eu porta dolor. Nunc finibus pretium odio, eget aliquet mauris sodales sed. Vivamus egestas sit amet nunc id fringilla. Aenean at sem ac ligula tristique rhoncus quis sed mauris. Aliquam erat volutpat. Sed scelerisque ligula sit amet mi tincidunt tristique. Quisque odio nunc, sollicitudin id finibus sit amet, pretium sed orci. Vivamus sodales efficitur nulla id faucibus. Vestibulum ultrices maximus velit, eget vehicula libero bibendum sed. Praesent et vehicula felis, nec feugiat nibh.
-    </p>
-  </div>
+        <div class="flexenbas">
+            <div class="container">
+                <p>fiojzqiofjqzopdioiqzjdoiqzjdiozqjfioqzjhiofjqzio</p>
+            </div>
 
 
+            <div class="container center">
+                <p>
+                    Ce qui me définis :
+                    Je suis PASTRE Toni,je suis née a Paris dans le 13ième, je passais 1 weekend sur 2 a allez chez mon
+                    père
+                    a carnoux en provence,j'ai était touché par l'environnement
+                    sympathique de cette zone.
+                    Mes été dans le Sud-est avec ma mère a passer du moment avec la grande famille que j'ai,
+                    et j'allais également a paris voir mes grand-parent,plus grand ces grand été libre,m'ont permis de
+                    m'amuser sur 1 project et de jouer a civilisation 1 et minecraft.
+                    J'allais aussi a paris pour voir mes grand-parent,ça me permet de voir le côté ville,qui est quand
+                    même
+                    sympathique car il permet de faire plein de chose,comme par exemple des musée(Jardin de plante).
+                    J'aime la nature,je l'aime pour ce qu'elle me procure,un sentiment de bien
+                    être et de non-pollution,c'est pour cette raison la que je suis tout le temps très éloignée de la
+                    ville
+                    comme
+                    actuellement,aussi le fait d'être dans seul et de pas être dans un environnement avec plein de
+                    personne
+                    ce qui est je trouve pas très sympathique.
+                    j'aimerais beaucoup voyager et découvrir des pays comme par exemple l'islande,j'ai bien fait une
+                    sortie
+                    en italie en 3ième,mais j'aimerais plus parcourir le monde pour voir le monde extérieur et ça
+                    culture,être tout le temps en france est assez épuisant a force,
+                    j'aime beaucoup le dessin et l'art que j'aimerai pratiquer plus souvent pendant mes temps libre
+                    Je m'interesse très peu au tendance tel que tiktok
+                    J'adore pendant que je développe mes project être plongé dedans grâce a la musique,tel que des ost.
+                    J'aime dans la vie,non pas des chose statique,mais j'aime l'animation la créativité des gens.
+                    J'aime bien le sarcacsme parceque c'est une façon de dire des chose marrante,je l'aime quand il esrt
+                    bien placé de façon intelligente
+                    Depuis peux son père c'est installé réçamment a blois,j'affectionne un peu ce côté nature de ces
+                    environt et ses chateaux multiple.
+                    J'ai les livre dont vous êtes les héros.
+                    J'aime l'univers des bande dessinée et des manga/animée.
+                </p>
+            </div>
+        </div>
 
-  </body>
+    </div>
 
-  </html>
+    <div class="boxiall">
+
+        <div class="box">
+            <h1>Origines</h1>
+            <ul>
+                <li>Né à Paris</li>
+                <li>Enfance passée dans le sud-est près d'Avignon.</li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <h1>Famille</h1>
+            <ul>
+                <li>Issu d'une fratrie Nombreuse et animée. ç-ç</li>
+                <li>Jeux et disputes rythment mon quotidien.</li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <h1>Habitude</h1>
+            <ul>
+                <li>Séjours multiples entre Paris et Avignon.</li>
+                <li>Découverte récente de Blois.</li>
+                <li>Visite des région de France mais pas de sa gastronomie. (╯°□°)╯︵ ┻━┻ </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div style="display: none;">
+        <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="">Learn more</a> </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            To-do Centre d'interet :
+        </h1>
+        <!-- 3 sorte physique
+        Intellectuel
+        virtuel(ytb) -->
+
+
+        <ol class="list">
+            <li>
+                <h2>Deep Learning & IA</h2>
+                <span>Le deep learning est une chose merveileuse bien que dangeurese sur certaine point,les plus
+                    intelligent seront l'utulisée efficacement pour écrire des texte tandis que certain s'efforceront
+                    toujours a faire n'importe quoi avec.Mais c'est des outil puissant qui permette d'aider a contexte
+                    lucratif</span>
+                <a href="https://openai.com/">Site d'Openai</a>
+            </li>
+            <li>
+                <h2>Les mangas/Animées</h2>
+                <span>J'aprécie beaucoup la culture manga animée,et en regarde beaucoup,ayant une liste assez exostive
+                    d'animée regarder,vous pourrez voir grâce au button sur la droite ma liste d'animée regarder grâce
+                    au site adkami.</span>
+                <a href="https://adkami.com/list/tonidu13">Adkami List</a>
+            </li>
+            <li>
+                <h2>Les jeux vidéo</h2>
+                <span>Alala les jeux vidéo un domaine passionant auquel on peut passer ces heure a divertir mais qui
+                    peut aussi facilement devenir une addiction,soit dit en passant ne tombez pas dans le piège de
+                    certain jeu.<br>Vous trouverez sur le lien a droite toute sorte de chose concernant les jeux vidéo
+                    que
+                    je joue ou suis...</span>
+                <a href="#pp">PopUp en dev</a>
+            </li>
+            <li>
+                <h2>La musique</h2>
+                <span>La musique permet pour certain de me relaxer et c'est mon cas,bien que parfois ça soit du metal
+                    pourtant !<br>La musique est souvent apporté dans les jeux vidéo,les 2 se complete.J'aime bien
+                    l'electro et le lofi,bien que peut être vous vous n'interesez pas du tout a mes gout,mais si c'est
+                    le cas vous pouvez retrouvez avec le button sur votre droite des playlist de musique.</span>
+                <a href="https://music.apple.com/library/playlist/p.zp6KlOvimX95xPX">Favoris Playlist</a>
+            </li>
+            <li>
+                <h2>Visites/Voyage</h2>
+                <span>J'aimerais bien voyager comme j'ai dit en dehors de la france,bien que ce soit je trouve vachement
+                    complexe de le faire,c'est pour cela que je ne l'ai pas fait,allait en angleterre permettrait par
+                    exemple a m'aider sur mon niveau d'anglais,j'aime aussi visiter tranquillement certain lieu comme
+                    des chateaux ou des musée,ça me permet de faire
+                    autre chose que de rester chez moi.</span>
+                <a href="https://exploreloirevalley.com">Explore Loire Valley</a>
+            </li>
+            <li>
+                <h2>Les influenceurs suivis</h2>
+                <span>Je regarde youtube depuis mes 9 ans,je n'ai pas arrêter de regarder,bien que les choix de la
+                    plateforme laisse de plus en plus douter que elle soit bien mais passont,je sais que j'apprécie
+                    particulièrement Bob lennon(youtubeur) pour le fait que il soit rester a l'ancienne et ne coupe
+                    pratiquement
+                    pas ces vidéo car il anime tout le temps,j'ai l'impression d'avoir grandis avec eux alors que ce
+                    n'est pas du tout le cas,haha....<br>Bien que le temps ce faire de plus en plus race pour regarder
+                    toute ces vidéo vu leur longueur. </span>
+                <a href="https://www.youtube.com/@fantabobgames">Chaine de bob lennon</a>
+            </li>
+            <li>
+                <h2>Dessin</h2>
+                <span>Comme je l'ai dit j'aimerais plus explorer cet univers la,j'adore pouvoir dessiner en transmettant
+                    ces emotions,même si je trouve que c'est une chose extrement compliqué et qui demande beaucoup de
+                    pratique,peut être que j'essayye de faire trop de chose ?<br>
+                    Bref,vous trouverez sur le button a droite mon lien devianart ou vous pourrez voir les dessin dont
+                    je suis fier de certain !</span>
+                <a href="https://www.deviantart.com/toniportal">Devianart</a>
+            </li>
+            <li>
+                <h2>Le developpement</h2>
+                <span>ça a commencé par scratch 2 en fessant un project de classe de techno,je l'ai continuer chez moi
+                    pour faire des pauvre labyrinthe haha,dommage que je ne l'ai pas gardé
+                    précieusement,car au premier abord je ne passais pas que ça me plairrait autant plus que ça,alors
+                    que je venait sans men rendre compte de passer + de 20 heure a le faire,je me disais cela alors que
+                    vu le temps passait ça se voyait clairement
+                    mais ce qui a vraiment mit un cloud sur le fait que j'aime est quand j'ai developper mon "bot"
+                    discord avec Discord.js
+                    Mon petit bébé,que je chérie,particulièrement,bien que je ne sais pas trop quoi faire dessue après
+                    autant temps et autant peut de personne l'utulisant.
+                    J'adore passer mon temps libre a faire des truc dont personne ne se servira a par moi même,faire des
+                    chose
+                    inutile,c'est très amusant bien que parfois assez vide,vu que personne ne les utulise.
+                </span>
+                <a href="https://github.com/Bouftout">Github</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="container comptperso">
+
+        <h3>Compétence personnel</h3>
+        <br>
+        <h4>JavaScript</h4>
+        <div class="skillcontainer">
+            <a>
+                <div class="skills js">90%</div>
+            </a>
+        </div>
+        <h4>CSS</h4>
+        <div class="skillcontainer">
+            <a>
+                <div class="skills css">40%</div>
+            </a>
+        </div>
+        <h4>HTML</h4>
+        <div class="skillcontainer">
+            <a>
+                <div class="skills html">90%</div>
+            </a>
+        </div>
+
+        <h4>Node.js</h4>
+        <div class="skillcontainer">
+            <a>
+                <div class="skills nodejs">30%</div>
+            </a>
+        </div>
+
+    </div>
+
+
+    </body>
+
+    </html>
