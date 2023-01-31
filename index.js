@@ -49,3 +49,7 @@ app.get('/monparcour', function (req, res) {
 app.get('/mesproject', function (req, res) {
     res.render('mesproject.ejs')
 })
+
+app.get('/test', function (req, res) {
+    res.render('test.ejs')
+})
