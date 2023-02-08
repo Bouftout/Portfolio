@@ -1,40 +1,189 @@
 <%- include('./partials/head', {title:'Mon parcours',script:'parcours'}) %>
 
+
+
+
     <div id="container" class="container center">
         <h1>
             Mon parcours :
         </h1>
     </div>
 
-    <div class="boxiall">
+    <div class="cubeflex">
+        <section class="timeline">
+            <ol>
+                <li>
+                    <div>
+                        <time>2014-2018</time>Collége Simone veil à châteaurenard,pas très interessant a par 1 stage de
+                        1
+                        semaine a ACA
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2018-2021</time>Lycée Robert Schuman à Avignon,j'ai fait mes 2 années dans un baccalauréa
+                        professionel de Système numérique option C réseaux informatique et système communicants(RISC),a
+                        la
+                        fin j'ai finalement obtenue mon diplome correspondant.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2021-2023</time>Lycée Polyvalent Charles Peguy à Marseille,Actuellement ici pour avoir mon
+                        diplome de BTS SIO(Service Informatique aux Organisation) option SLAM(Solutions logicielles et
+                        applications métiers)
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-        <div class="box">
-            <h1>Origines</h1>
-            <ul>
-                <li>Né à Paris</li>
-                <li>Enfance passée dans le sud-est près d'Avignon.</li>
-            </ul>
+        <div class="container">
+            <article>
+                <br><br>
+
+                <div class="tabou cubeflex">
+                    <button class="taboulinks" onclick="openCity(event, 'BTS SIO')">BTS SIO</button>
+                    <button class="taboulinks" onclick="openCity(event, 'SLAM')">SLAM</button>
+                    <button class="taboulinks" onclick="openCity(event, 'SISR')">SISR</button>
+                </div>
+                <br>
+                <div id="BTS SIO" class="taboucontent">
+                    <h2><a
+                            href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations">Présentation
+                            du BTS SIO</a></h2>
+                    <p>Le BTS Services informatique aux Organisations est un diplôme reconnu par l’état de niveau Bac+2.
+                        Il
+                        remplace depuis septembre 2011 l’ancien BTS informatique de Gestion (BTS IG). En effet, cette
+                        nouvelle formule répond aux attentes de
+                        la profession en matière de qualification. Le programme a évolué en fonction de la place et du
+                        rôle
+                        des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes :
+                        le
+                        BTS SIO SISR et le BTS SIO SLAM.
+                        Il associe aux enseignements théoriques et professionnels (en contrôle continu et final) deux
+                        stages
+                        en entreprise (10 à 11 semaines réparties sur les deux années d’études). En plus des matières en
+                        lien avec l’ingénierie informatique,
+                        la formation propose également des enseignements de culture générale, d’anglais (avec la
+                        possibilité
+                        de continuer une LV2), de mathématiques appliquées à l’informatique, ainsi que sur les outils
+                        d’analyse économique, managériale et
+                        juridique des services informatiques. De plus, au cours de cette formation, il est possible de
+                        bénéficier d’un enseignement approfondi en mathématiques et de travailler en autonomie en
+                        laboratoire informatique.</p>
+                </div>
+                <div id="SISR" class="taboucontent" style="display:none">
+                    <h2><a
+                            href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux">Option
+                            SISR</a></h2>
+                    <p>L’option Solutions d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et
+                        équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR,
+                        vous
+                        serez capables de gérer et d’administrer
+                        le réseau d’une société et d’assurer sa sécurité et sa maintenance. Les techniciens supérieurs
+                        en
+                        informatique option SISR, peuvent accéder aux métiers de : Administrateur systèmes et réseaux,
+                        Informaticien support et déploiement,
+                        Pilote d’exploitation, Support systèmes et réseaux, Technicien d’infrastructure, Technicien de
+                        production, Technicien micro et réseaux.</p>
+                </div>
+
+                <div id="SLAM" class="taboucontent" style="display:none">
+                    <h2><a
+                            href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers">Option
+                            Slam</a></h2>
+                    <p>L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels
+                        (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement,
+                        intégration au sein de la société). Les techniciens
+                        supérieurs en informatique option slam, sont préparés aux métiers de Développeur d’applications
+                        informatiques Développeur informatique Analyste d’applications ou d’études Analyste programmeur
+                        Chargé d’études informatiques Informaticien
+                        d’études Programmeur analyste Programmeur d’applications Responsable des services applicatifs
+                        Technicien d’études informatiques</p>
+                </div>
+
+
         </div>
 
 
+        </article>
+    </div>
+
+    </div>
+
+    <div class="cubeflex">
         <div class="box">
-            <h1>Famille</h1>
-            <ul>
-                <li>Issu d'une fratrie Nombreuse et animée. ç-ç</li>
-                <li>Jeux et disputes rythment mon quotidien.</li>
-            </ul>
+            <div id="0">
+                <h1>Information</h1>
+                <h3>Anythime</h3>
+                <p>Vous pouvez bouger le cube pour voir les stages que j'ai fait Actuellement</p>
+            </div>
+
+            <div id="1">
+                <h1>CyberTel</h1>
+                <h3>2018 & 2020 & 2022</h3>
+                <p>Entreprise de Magasin de téléphonie mobile ; j'ai donc effectuée mon stage au côté de mon tuteur
+                    étant aussi le patron<br>Le cadre de travail n'était point stricte et ayant aucun project,assez
+                    sobre toute fois vu comme l'entreprise est petite, les technologie utilisée était donc
+                    "ADB","Bluetooth","Imprimante"<br>J'ai donc réalisée un travail auquel j'était très proche des
+                    client,dont réparer leur pc,leur portable mais pas que physiquement,Certain par exemple oublie leur
+                    mot de passe google + leur shéma ou mot de passe il font donc trouvée des techinque pour les
+                    contourner,ou utuliser des logiciel tier si possible.Allez dépaner directement le problème chez les
+                    client était aussi possible<br>J'ai appris que les gens on toujours de plus en plus besoin de petite
+                    entreprise comme ceci qui répare rapidement et facilement, ce qui m'a deplu et que c'est un travail
+                    qui se joue uniquement sur le fait que les Téléphone ou pc auront un problème il arrive donc certain
+                    moment auquel il n'y a aucun client,ce qui est normal,on en profite donc pour faire autre chose.</p>
+            </div>
+
+            <div id="2">
+                <h1>Acronis informatique</h1>
+                <h3>Novembre 2019 - Décembre 2019</h3>
+                <p>J'ai construit des pc pour les client</p>
+            </div>
+
+            <div id="3">
+                <h1>Explore loire valley</h1>
+                <h3>Janvier 2023 - Février 2023</h3>
+                <p>J'ai travaillé sur le site Wix de ma patronne,fait une documentation de comment utuliser wix,pour
+                    travailler sur le site de wix je me suis pliée au demande de mon patron par rapport a la plateforme
+                </p>
+            </div>
+
+            <div id="4">
+                <h1>Institut Sainte Catherine</h1>
+                <h3>Février 2019 - Mars 2019</h3>
+                <p>J'ai rechercher la définition de "la fibre optique" sur un pc disposant d'ubuntu,j'ai appris a
+                    utuliser plus en profondeur les moteur de recherche,et de rechercher un peu plus efficacement des
+                    information sur des article</p>
+            </div>
+
+
+
         </div>
-
-
-        <div class="box">
-            <h1>Habitude</h1>
-            <ul>
-                <li>Séjours multiples entre Paris et Avignon.</li>
-                <li>Découverte récente de Blois.</li>
-                <li>Visite des région de France mais pas de sa gastronomie. (╯°□°)╯︵ ┻━┻ </li>
-            </ul>
+        <div id="wrapper">
+            <div class="viewport">
+                <div class="cube">
+                    <div class="side">
+                        <div class="cube-image">0</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">1</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">2</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">3</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">4</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image active">0</div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
 
     </body>
