@@ -15,6 +15,3 @@ jobs:
         localDir: "dist"
         remoteDir: "/www/"
         options: "--delete --asci"
-        include: ["*.js", "views/**", "src/*", ".*","views/*","src/*/*","index.js","package.json"],
-        exclude: ["dist/**/*.map","node_modules/**","node_modules/**/.*",".git/**",".gitignore","readme.md","src/people/*","V1/**","ftpdeploy.js"
-  ]
