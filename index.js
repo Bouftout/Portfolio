@@ -50,10 +50,6 @@ app.get('/mesproject', function (req, res) {
     res.render('mesproject.ejs')
 })
 
-app.get('/veilletechno', function (req, res) {
-    res.render('veilletechno.ejs')
-})
-
 app.get('/test', function (req, res) {
     res.render('test.ejs')
 })
