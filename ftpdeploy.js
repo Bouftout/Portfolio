@@ -10,15 +10,18 @@ const config = {
     localRoot: __dirname + "/",
     remoteRoot: "/www/",
     // include: ["*", "**/*"],      // this would upload everything except dot files
-    include: ["*.js", "views/*", "src/*", ".*","views/*","src/*/*","index.js","package.json"],
+    include: ["*.js", "views/**", "src/*", ".*","views/*","src/*/*","index.js","package.json"],
     // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)
     exclude: [
         "dist/**/*.map",
         "node_modules/**",
         "node_modules/**/.*",
         ".git/**",
+        ".gitignore",
+        "readme.md",
         "src/people/*",
-        "V1/**"
+        "V1/**",
+        "ftpdeploy.js"
     ],
     // delete ALL existing files at destination before uploading, if true
     deleteRemote: false,

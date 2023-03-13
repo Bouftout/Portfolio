@@ -78,7 +78,7 @@ li {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: stretch;
   width: auto;
 }
@@ -107,8 +107,13 @@ p {
   /* margin-bottom: 20px; */
 }
 
+.pp>.box>h3 {
+  position: relative;
+  font-size: x-large;
+}
 
-.box>h1,
+
+.box h1,
 .flexcenter>h1 {
   display: flex;
   color: rgb(255, 255, 255);
@@ -116,7 +121,7 @@ p {
   font-weight: 500;
 }
 
-.box>img {
+.box img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -259,10 +264,11 @@ td {
   height: auto;
   margin: 10px;
   color: #D2DAFF;
+  border: 1px solid #000;
 }
 
 .comptperso {
-  color: #000000;
+  color: white;
   margin-top: 20px;
 }
 
@@ -432,23 +438,28 @@ a:before {
 }
 
 .html {
-  width: 90%;
+  width: 80%;
   background-color: #57103c;
 }
 
 .css {
-  width: 40%;
+  width: 60%;
   background-color: #2196F3;
 }
 
 .js {
-  width: 80%;
+  width: 75%;
   background-color: #f44336;
 }
 
 .nodejs {
-  width: 30%;
+  width: 35%;
   background-color: #008b4a;
+}
+
+.php {
+  width: 40%;
+  background-color: darkblue;
 }
 
 /* Mon Parcours
