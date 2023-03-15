@@ -8,6 +8,18 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body:not(swiper){
+  overflow-x: hidden;
+}
+
+.acimg {
+  height: 180px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  right: 15%;
+}
+
 navbar>div>button:disabled {
   opacity: 0.5;
   color: black;
@@ -94,8 +106,9 @@ li {
 }
 
 p {
+  font-size: 2rem;
   color: #fff;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 400;
   text-align: center;
 }
@@ -177,12 +190,11 @@ navbar>div>ul>button {
 
 
 .container {
-  background-image: url('../img/ninjabanner.jpg');
+  background-color: #00968733; 
   background-size: cover !important;
   overflow: auto;
   border: 2px solid #00bcd4;
   padding: 1rem;
-  background-color: #f5f5f5;
   box-shadow: 0 20px 40px -14px rgb(255 255 255 / 25%);
   display: flex;
   width: 98%;
@@ -258,7 +270,10 @@ td {
   width: 98%;
   height: auto;
   margin: 10px;
-  color: #D2DAFF;
+  color: #ffffff;
+}
+.comptperso>h4 {
+  color: white;
 }
 
 .comptperso {
@@ -432,22 +447,22 @@ a:before {
 }
 
 .html {
-  width: 90%;
+  width: 99%;
   background-color: #57103c;
 }
 
 .css {
-  width: 40%;
+  width: 70%;
   background-color: #2196F3;
 }
 
 .js {
-  width: 80%;
+  width: 90%;
   background-color: #f44336;
 }
 
 .nodejs {
-  width: 30%;
+  width: 50%;
   background-color: #008b4a;
 }
 
@@ -763,4 +778,19 @@ object:hover {
     -o-transform: scale(0.6, 0.6);
     transform: scale(0.6, 0.6);
   }
+}
+
+h1 {
+  font-size: 3rem;
+}
+.flexenbas {
+  margin-bottom: 22px;
+}
+
+.boxiall {
+  margin-bottom: 40px;
+}
+
+.comptperso {
+  margin-top: 40px;
 }

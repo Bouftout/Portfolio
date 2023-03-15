@@ -1,6 +1,6 @@
-<%- include('./partials/head', {title:'Mes projects',script:'project'}) %>
+<%- include('./partials/head', {title:'Mes projects'}) %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- script:'project' -->
 
     <style>
         /* Slide card */
@@ -145,7 +145,7 @@
             margin-left: -10px;
         } */
 
-        .card:hover {
+        /* .card:hover {
             transform: translateY(-20px);
             transition: 0.4s ease-out;
         }
@@ -154,7 +154,7 @@
             position: relative;
             left: 50px;
             transition: 0.4s ease-out;
-        }
+        } */
 
         .card-content>h5 {
             position: relative;
@@ -388,7 +388,9 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <%- include('./partials/footer', {script:'project'}) %>
+    
     </body>
 
     </html>
