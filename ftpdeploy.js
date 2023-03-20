@@ -4,13 +4,13 @@ const ftpDeploy = new FtpDeploy();
 const config = {
     user: "pastretoni",
     // Password optional, prompted if none given
-    password: "totoni13",
+    password: "totoni13@louna",
     host: "ftp-pastretoni.alwaysdata.net",
     port: 21,
     localRoot: __dirname + "/",
     remoteRoot: "/www/",
     // include: ["*", "**/*"],      // this would upload everything except dot files
-    include: ["*.js", "views/*", "src/*", ".*","views/*","src/*/*","index.js","package.json"],
+    include: ["*.js", "views/*", "src/*", ".*","views/*","src/*/*","index.js","package.json","./partials/*"],
     // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)
     exclude: [
         "dist/**/*.map",

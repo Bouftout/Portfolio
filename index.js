@@ -7,7 +7,7 @@ const express = require('express'),
 
 app = express();
 
-server = app.listen(port,ip, err => {
+server = app.listen(port, ip, err => {
     err ?
         console.log("Error in server setup") :
         console.log(`Worker ${process.pid} started\nServeur lancer sur: http://localhost:${port}`);
@@ -48,4 +48,8 @@ app.get('/monparcour', function (req, res) {
 
 app.get('/mesproject', function (req, res) {
     res.render('mesproject.ejs')
+})
+
+app.get('/veilletechno', function (req, res) {
+    res.render('veilletechno.ejs')
 })
