@@ -272,14 +272,6 @@ td {
   margin: 10px;
   color: #ffffff;
 }
-.comptperso>h4 {
-  color: white;
-}
-
-.comptperso {
-  color: #000000;
-  margin-top: 20px;
-}
 
 
 
@@ -444,26 +436,6 @@ a:before {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-}
-
-.html {
-  width: 99%;
-  background-color: #57103c;
-}
-
-.css {
-  width: 70%;
-  background-color: #2196F3;
-}
-
-.js {
-  width: 90%;
-  background-color: #f44336;
-}
-
-.nodejs {
-  width: 50%;
-  background-color: #008b4a;
 }
 
 /* Mon Parcours
@@ -791,9 +763,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-.comptperso {
-  margin-top: 40px;
-}
 
 #e4 {
   color: black;
@@ -804,3 +773,59 @@ h1 {
 #e4:hover {
   background-color: #008b4a;
 }
+
+.comptperso {
+  font-size: 3rem;
+  color: white;
+  overflow: hidden;
+}
+
+.comptperso>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comptperso>div>div {
+  margin-left: 50;
+  width: 200px;
+  height: 200px;
+
+}
+
+.html {
+  background-color: #57103c;
+}
+
+.css {
+  background-color: #2196F3;
+}
+
+.js {
+  background-color: #d9ff00;
+}
+
+.nodejs {
+  background-color: #008b4a;
+}
+
+.php {
+  background-color: #00098b;
+}
+
+
+.comptperso>div>div>h4 {
+  font-size: 2.5rem;
+  margin-top: -35px;
+}
+
+.comptperso>div>div h3 {
+  top: 42.5%;
+  font-size: 2.2rem;
+  color: #000;
+  position: relative;
+}
+
+
+
+
+
