@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script type="text/javascript" src="../../src/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="./src/css/index.css" />
-    <% if(locals.script){ %>
-        <script type="text/javascript" src="../src/js/<%= script %>.js"></script>
-        <% } if(locals.css){ %>
+    <script type="text/javascript" src="../../src/js/all.js"></script>
+
+        <% if(locals.css){ %>
             <link rel="stylesheet" href="../src/css/<%= css %>.css">
             <% } %>
 
@@ -22,16 +20,19 @@
                     <div class="sticky">
 
                        
-                            <ul>
                                 <button action="/">Accueil</button>
-                            </ul>
                            
                                 <div class="espace"></div>
 
 
                                 <button action="/quisuisje">Qui suis-je ?</button>
                                 <button action="/monparcour">Mon Parcours</button>
+<<<<<<< HEAD
                                 <button action="/mesproject">Mes projects</button>
+=======
+                                <button action="/mesproject">Mes project</button>
+                                <button action="/veilletechno">Veille Technologique</button>
+>>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 
                                 <ul>
                                             <button action="/veilletechno">Veille technologique</button>    

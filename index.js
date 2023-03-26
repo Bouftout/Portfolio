@@ -7,7 +7,7 @@ const express = require('express'),
 
 app = express();
 
-server = app.listen(port,ip, err => {
+server = app.listen(port, ip, err => {
     err ?
         console.log("Error in server setup") :
         console.log(`Worker ${process.pid} started\nServeur lancer sur: http://localhost:${port}`);
@@ -53,7 +53,13 @@ app.get('/mesproject', function (req, res) {
 app.get('/veilletechno', function (req, res) {
     res.render('veilletechno.ejs')
 })
+<<<<<<< HEAD
 
 app.get('/test', function (req, res) {
     res.render('test.ejs')
 })
+=======
+app.get('/e4', function (req, res) {
+    res.redirect('/src/e4tableau.xlsx')
+})
+>>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf

@@ -8,9 +8,22 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body:not(swiper){
+  overflow-x: hidden;
+}
+
+.acimg {
+  height: 180px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  right: 15%;
+}
+
 navbar>div>button:disabled {
-  opacity: 0.5;
+  opacity: 0.9;
   color: black;
+  border: 4px solid rgba(255, 0, 0, 0.6);
 }
 
 navbar {
@@ -94,8 +107,9 @@ li {
 }
 
 p {
+  font-size: 2rem;
   color: #fff;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 400;
   text-align: center;
 }
@@ -182,12 +196,11 @@ navbar>div>ul>button {
 
 
 .container {
-  background-image: url('../img/ninjabanner.jpg');
+  background-color: #00968733; 
   background-size: cover !important;
   overflow: auto;
   border: 2px solid #00bcd4;
   padding: 1rem;
-  background-color: #f5f5f5;
   box-shadow: 0 20px 40px -14px rgb(255 255 255 / 25%);
   display: flex;
   width: 98%;
@@ -263,6 +276,7 @@ td {
   width: 98%;
   height: auto;
   margin: 10px;
+<<<<<<< HEAD
   color: #D2DAFF;
   border: 1px solid #000;
 }
@@ -270,6 +284,9 @@ td {
 .comptperso {
   color: white;
   margin-top: 20px;
+=======
+  color: #ffffff;
+>>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 }
 
 
@@ -437,6 +454,7 @@ a:before {
   color: white;
 }
 
+<<<<<<< HEAD
 .html {
   width: 80%;
   background-color: #57103c;
@@ -462,6 +480,8 @@ a:before {
   background-color: darkblue;
 }
 
+=======
+>>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 /* Mon Parcours
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -775,3 +795,81 @@ object:hover {
     transform: scale(0.6, 0.6);
   }
 }
+
+h1 {
+  font-size: 3rem;
+}
+.flexenbas {
+  margin-bottom: 22px;
+}
+
+.boxiall {
+  margin-bottom: 40px;
+}
+
+
+#e4 {
+  color: black;
+  font-size: x-large;
+  width: 5%;
+  height: 50%;
+}
+#e4:hover {
+  background-color: #008b4a;
+}
+
+.comptperso {
+  font-size: 3rem;
+  color: white;
+  overflow: hidden;
+}
+
+.comptperso>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comptperso>div>div {
+  margin-left: 50;
+  width: 200px;
+  height: 200px;
+
+}
+
+.html {
+  background-color: #57103c;
+}
+
+.css {
+  background-color: #2196F3;
+}
+
+.js {
+  background-color: #d9ff00;
+}
+
+.nodejs {
+  background-color: #008b4a;
+}
+
+.php {
+  background-color: #00098b;
+}
+
+
+.comptperso>div>div>h4 {
+  font-size: 2.5rem;
+  margin-top: -35px;
+}
+
+.comptperso>div>div h3 {
+  top: 42.5%;
+  font-size: 2.2rem;
+  color: #000;
+  position: relative;
+}
+
+
+
+
+
