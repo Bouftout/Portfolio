@@ -355,6 +355,12 @@ document.addEventListener('DOMContentLoaded', async event => {
     if (text == 4) {
       quatre.style.display = "block"
     }
+    if (text == 5) {
+      cinq.style.display = "block"
+    }
+    if (text == 6) {
+      cinq.style.display = "block"
+    }
 
   }
 
@@ -368,6 +374,7 @@ document.addEventListener('DOMContentLoaded', async event => {
   const deux = document.getElementById("2")
   const trois = document.getElementById("3")
   const quatre = document.getElementById("4")
+  const cinq = document.getElementById("5")
 
   function reset() {
     zero.style.display = "none"
@@ -375,6 +382,7 @@ document.addEventListener('DOMContentLoaded', async event => {
     deux.style.display = "none"
     trois.style.display = "none"
     quatre.style.display = "none"
+    cinq.style.display = "none"
   }
 
   try{

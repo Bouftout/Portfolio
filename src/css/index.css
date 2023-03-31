@@ -8,16 +8,12 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-body:not(swiper){
+body:not(swiper) {
   overflow-x: hidden;
 }
 
 .acimg {
-  height: 180px;
-  width: 70%;
-  position: relative;
-  left: 15%;
-  right: 15%;
+  height:300px 
 }
 
 navbar>div>button:disabled {
@@ -196,7 +192,7 @@ navbar>div>ul>button {
 
 
 .container {
-  background-color: #00968733; 
+  background-color: #00968733;
   background-size: cover !important;
   overflow: auto;
   border: 2px solid #00bcd4;
@@ -276,17 +272,15 @@ td {
   width: 98%;
   height: auto;
   margin: 10px;
-<<<<<<< HEAD
-  color: #D2DAFF;
+  <<<<<<< HEAD color: #D2DAFF;
   border: 1px solid #000;
 }
 
 .comptperso {
   color: white;
   margin-top: 20px;
-=======
-  color: #ffffff;
->>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf
+  =======color: #ffffff;
+  >>>>>>>380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 }
 
 
@@ -454,8 +448,7 @@ a:before {
   color: white;
 }
 
-<<<<<<< HEAD
-.html {
+<<<<<<< HEAD .html {
   width: 80%;
   background-color: #57103c;
 }
@@ -480,12 +473,11 @@ a:before {
   background-color: darkblue;
 }
 
-=======
->>>>>>> 380d3fe08cd66e51a415c0c490ddf15f1089d3cf
+=======>>>>>>>380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 /* Mon Parcours
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.taboucontent p{
+.taboucontent p {
   margin-top: 10px;
   font-size: 20px;
 }
@@ -799,6 +791,7 @@ object:hover {
 h1 {
   font-size: 3rem;
 }
+
 .flexenbas {
   margin-bottom: 22px;
 }
@@ -814,6 +807,7 @@ h1 {
   width: 5%;
   height: 50%;
 }
+
 #e4:hover {
   background-color: #008b4a;
 }
@@ -869,7 +863,51 @@ h1 {
   position: relative;
 }
 
+/* ----------------- ARTICLE */
 
 
 
+.namearticle h1,h2,time {
+  color: white;
+}
 
+.article .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.article .date>h2 {
+  position: relative;
+  right: 1%;
+}
+.article .date>time {
+  position: relative;
+  bottom: 10%;
+}
+
+.article p {
+  padding: 2px;
+  margin: 5px;
+}
+
+.article .btnarticle{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  bottom: 110px;
+  right: 80px;
+}
+
+.article button {
+  width: 30%;
+  font-size: xx-large;
+}
+
+
+.namearticle>h2 {
+  position: relative;
+  font-size: 50px;
+  bottom: 60px;
+}
