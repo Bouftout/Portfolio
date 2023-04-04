@@ -8,6 +8,13 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  height: 1080px;
+}
+
 body:not(swiper) {
   overflow-x: hidden;
 }
@@ -333,14 +340,17 @@ td {
 
 
 
-.list>li>h2 {
-  padding: 0rem 0 0 0;
-  margin: 0 0 1rem 0;
-  font: normal 2rem var(--font-head);
+li>h2,li>h1 {
+  padding: 1rem 1 1 1;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.list>li>span {
+.list>div>li>p {
   color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .list>li>h2 {
@@ -367,6 +377,8 @@ td {
   background-color: #000;
   margin-bottom: 50px;
 }
+
+
 
 .image {
   position: relative;
@@ -396,8 +408,21 @@ td {
   width: 100%;
   text-align: center;
   border-radius: 10px;
+  margin-left: 30px;
 }
 
+
+div li a:not(#e4) {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 111%;
+}
 
 a {
   color: #fff;
@@ -405,20 +430,33 @@ a {
   display: block;
   position: relative;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+a:hover {
+  color: #665b5b98 !important;
+  background-color: transparent;
+  text-shadow: nfour;
 
 }
 
-a:hover {
+
+div li a:hover {
   color: #000 !important;
   background-color: transparent;
   text-shadow: nfour;
+  border: #000 solid 1px;
 }
+
 
 .list a:hover:before {
   right: 0%;
   left: auto;
   width: 100%;
 }
+
 
 .js a:hover:before {
   right: 10%;
@@ -473,7 +511,6 @@ a:before {
   background-color: darkblue;
 }
 
-=======>>>>>>>380d3fe08cd66e51a415c0c490ddf15f1089d3cf
 /* Mon Parcours
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -513,25 +550,23 @@ a:before {
 }
 
 .cubeflex>.box {
-  min-width: 700px;
-  min-height: 300px;
+  min-width: 800px;
+  min-height: 400px;
   padding: 4px;
 }
 
-.cubeflex>.box h3 {
-  position: absolute;
-  right: 2%;
-  top: 2%;
-}
 
 .cubeflex>.box h1 {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .cubeflex>.box p {
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .section {
@@ -802,15 +837,24 @@ h1 {
 
 
 #e4 {
-  color: black;
+  color: white;
   font-size: x-large;
-  width: 5%;
-  height: 50%;
+  width: 100%;
+  height: 180px;
+  background-color: #008b4a;
+  font-size: 100px;
+  text-align: center;
+  bottom: 0;
+  justify-content: center;
+  position: sticky;
+  margin-top: 50px;
+}
+#e4>a {
+  margin: 20px;
+  font-size: 100px;
+  width: 100%;
 }
 
-#e4:hover {
-  background-color: #008b4a;
-}
 
 .comptperso {
   font-size: 3rem;
@@ -853,7 +897,8 @@ h1 {
 
 .comptperso>div>div>h4 {
   font-size: 2.5rem;
-  margin-top: -35px;
+  margin-top: -40px;
+
 }
 
 .comptperso>div>div h3 {
@@ -867,8 +912,9 @@ h1 {
 
 
 
-.namearticle h1,h2,time {
+.namearticle h1,h2 {
   color: white;
+  font-size: xx-large;
 }
 
 .article .date {
@@ -884,12 +930,12 @@ h1 {
 }
 .article .date>time {
   position: relative;
-  bottom: 10%;
+  top: 9px;
 }
 
 .article p {
   padding: 2px;
-  margin: 5px;
+  margin: 16px;
 }
 
 .article .btnarticle{

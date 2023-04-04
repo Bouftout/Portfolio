@@ -173,3 +173,8 @@
 .card-content ul>li {
   margin-bottom: 5px;
 }
+
+.stagedate {
+  margin: 50px;
+  text-align: right;
+}

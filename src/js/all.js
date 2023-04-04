@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async event => {
             element.addEventListener('click', function (e) {
                 e.preventDefault();
                 window.location.href = `${action}`;
+                
             })
         }
     });
