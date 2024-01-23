@@ -4,7 +4,7 @@ const ftpDeploy = new FtpDeploy();
 const config = {
     user: "pastretoni",
     // Password optional, prompted if none given
-    password: "totoni13@louna",
+    password: "totoni13",
     host: "ftp-pastretoni.alwaysdata.net",
     port: 21,
     localRoot: __dirname + "/",

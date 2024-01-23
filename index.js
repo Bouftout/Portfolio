@@ -34,6 +34,7 @@ app.get('/dormir', function (req, res) {
     })
 });
 
+
 app.get('/', function (req, res) {
     res.render('index.ejs')
 })
@@ -53,6 +54,12 @@ app.get('/mesproject', function (req, res) {
 app.get('/veilletechno', function (req, res) {
     res.render('veilletechno.ejs')
 })
+
 app.get('/e4', function (req, res) {
     res.redirect('/src/e4tableau.xlsx')
 })
+
+app.get('/quack', function (req, res) {
+    res.redirect("/src/Quack.mp4");
+})
+

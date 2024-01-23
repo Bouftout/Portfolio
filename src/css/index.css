@@ -92,6 +92,7 @@ li {
   background-color: #00252a;
   box-shadow: 0 20px 40px -14px rgb(255 255 255 / 25%);
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
@@ -279,15 +280,14 @@ td {
   width: 98%;
   height: auto;
   margin: 10px;
-  <<<<<<< HEAD color: #D2DAFF;
+  color: #D2DAFF;
   border: 1px solid #000;
 }
 
 .comptperso {
   color: white;
   margin-top: 20px;
-  =======color: #ffffff;
-  >>>>>>>380d3fe08cd66e51a415c0c490ddf15f1089d3cf
+  color: #ffffff;
 }
 
 
@@ -486,7 +486,7 @@ a:before {
   color: white;
 }
 
-<<<<<<< HEAD .html {
+.html {
   width: 80%;
   background-color: #57103c;
 }
