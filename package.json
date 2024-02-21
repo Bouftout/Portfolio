@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/Bouftout/sitewebcours#readme",
     "dependencies": {
-        "@sendgrid/mail": "^7.6.0",
+        "@sendgrid/mail": "^8.1.1",
         "body-parser": "^1.20.1",
         "colors": "^1.4.0",
         "compression": "^1.7.4",
